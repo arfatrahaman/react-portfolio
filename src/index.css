@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Rubik:wght@400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+:root {
+  --bg-color: #fafafa;
+  --headline-text-color: #f24e1e;
+  --sec-text-color: #022838;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 3rem;
+  color: var(--headline-text-color);
+}
+
+h3 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--sec-text-color);
+}
+
+h4 {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  color: var(--headline-text-color);
+  margin-top: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--sec-text-color);
+  text-decoration: none;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.page-btn,
+button {
+  display: inline-block;
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: var(--sec-text-color);
+  color: var(--bg-color);
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.4rem;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+  padding: 2rem 0;
+}
+
+@media (min-width: 824.99px) {
+  h2 {
+    font-size: 5rem;
+  }
+
+  h3 {
+    font-size: 3.3rem;
+  }
+}
+
+@media (min-width: 999.99px) {
+  h2 {
+    font-size: 7rem;
+  }
+  h6 {
+    font-size: 2rem;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+#home-page,
+#about-page,
+#project-page,
+#service-page,
+#contact-page,
+#error-page {
+  padding: 5rem 1rem;
+  background-color: var(--bg-color);
+}
+
+@media (min-width: 999.99px) {
+  #home-page,
+  #about-page,
+  #project-page,
+  #service-page,
+  #contact-page,
+  #error-page {
+    padding: 10rem 1rem;
+  }
+}
+
+.section-title {
+  padding-bottom: 2rem;
+  text-align: center;
+}
+
+.toggle-btn {
+  font-size: 2rem;
+}
+
+/* Full Website Fixed Left Navigation Section */
+
+/* My Portfolio */
+
+#my-portfolio {
+  background-color: var(--headline-text-color);
+}
+
+.my-portfolio-left-side {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.my-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 3rem;
+}
+
+.image {
+  display: none;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.nav-link:first-child {
+  margin-top: 2rem;
+}
+
+.nav-link:last-child {
+  margin-bottom: 0;
+}
+
+.nav-links {
+  display: none;
+}
+
+.show-nav {
+  display: block;
+}
+
+.nav-icon {
+  font-size: 3rem;
+  margin-right: 1rem;
+}
+
+.social-link {
+  margin-right: 1rem;
+}
+
+@media (min-width: 799.99px) {
+  .my-portfolio-wrapper {
+    display: grid;
+    display: -ms-grid;
+    grid-template-columns: 30% 70%;
+  }
+
+  .my-portfolio-left-side {
+    padding: 0 2rem;
+    min-height: 100vh;
+  }
+
+  .my-logo {
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 3rem;
+    padding: 2rem 0;
+  }
+
+  .image {
+    display: block;
+    padding: 0 0 2rem 0;
+  }
+
+  .nav-links {
+    display: block;
+  }
+
+  .nav-link {
+    margin-bottom: 3rem;
+  }
+
+  .toggle-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 999.99px) {
+  .my-portfolio-wrapper {
+    grid-template-columns: 20% 80%;
+  }
+}
+
+/* Home Page All Css */
+
+#home-page {
+  display: grid;
+  align-items: center;
+  height: 50vh;
+  background-color: var(--bg-color);
+}
+
+.home-page-content {
+  text-align: center;
+}
+
+.home-page-headline {
+  padding: 1rem 0;
+}
+
+@media (min-width: 799.99px) {
+  #home-page {
+    min-height: 100vh;
+  }
+}
+
+/* About Page All Css */
+
+.about-content,
+.my-skill-section {
+  text-align: center;
+}
+
+.skill-headline {
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 799.99px) {
+  .about-content,
+  .my-skill-section {
+    text-align: left;
+  }
+
+  .about-page-wrapper {
+    padding: 0 5rem;
+  }
+}
+
+/* 04 Project */
+
+#project-page {
+  background-color: var(--bg-color);
+}
+
+.project-page-wrapper {
+  display: grid;
+  padding: 3rem 0;
+}
+
+.project-page-wrapper .project-content {
+  grid-row-start: 2;
+}
+
+.project-page-wrapper .project-image {
+  grid-row-start: 1;
+}
+
+.project-content {
+  text-align: center;
+}
+
+@media (min-width: 999.99px) {
+  .project-page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    grid-gap: 1.5rem;
+    padding: 5rem 0;
+  }
+
+  .project-page-wrapper .project-content {
+    grid-row-start: auto;
+  }
+
+  .project-page-wrapper .project-image {
+    grid-row-start: auto;
+  }
+
+  .project-content {
+    text-align: left;
+  }
+}
+
+/* Service Page All Css */
+
+.single-sercice-item {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  transition: all 0.5s ease;
+}
+
+.service-item-image {
+  margin-bottom: 1.5rem;
+}
+
+.service-img {
+  width: 50px;
+}
+
+@media (min-width: 599.99px) {
+  .service-page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+  .single-sercice-item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1179.99px) {
+  .service-page-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Contact us */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.input-textarea {
+  resize: none;
+}
+
+.contact-submit-btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  width: 40%;
+  background-color: orange;
+  color: white;
+  display: inline-block;
+  border: none;
+  margin: 0 auto;
+}
+
+@media (min-width: 549.99px) {
+  .contact-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .contact-submit-btn {
+    width: 20%;
+  }
+}
+
+@media (min-width: 999.99px) {
+  /* 6 Footer Responsive */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: initial;
+  }
+
+  .copyright {
+    justify-self: end;
+  }
+}
